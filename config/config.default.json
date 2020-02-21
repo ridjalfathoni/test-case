@@ -1,7 +1,7 @@
 {
   "example": {
     "port": 3060,
-    "baseUrl": "http://localhost:3020/",
+    "baseUrl": "https://virtserver.swaggerhub.com/hanabyan/todo/1.0.0",
     "publicBasename": "react-boilerplate/"
   }
 }
