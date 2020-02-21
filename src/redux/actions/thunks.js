@@ -2,6 +2,13 @@ import { ENTITY_KEY } from '../../common/app-const';
 import { loadEntity } from 'redux-entity';
 import ExampleDomainService from '../../services/domain/example-domain-service';
 
+export function fetchToDo () {
+  return loadEntity(
+    ENTITY_KEY.TODO,
+    ExampleDomainService.getToDoList()
+  )
+}
+
 /**
  * Thunk action that simulates a delayed API call
  * @returns {Function}  thunk

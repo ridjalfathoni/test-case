@@ -4,14 +4,15 @@ import Entity from './Entity';
 import { connect } from 'react-redux';
 
 import Flex from '../../common/glamorous/Flex';
-import { fetchFoo, fetchBar, fetchBaz } from '../../../redux/actions/thunks';
+import { fetchFoo, fetchBar, fetchBaz, fetchToDo } from '../../../redux/actions/thunks';
 import { ENTITY_KEY } from '../../../common/app-const';
 
 const ReduxEntity = ({
   entities,
   fetchFoo,
   fetchBar,
-  fetchBaz
+  fetchBaz,
+  fetchToDo
 }) => {
   const getLoadEntityThunk = (key) => {
     switch (key) {
@@ -21,6 +22,8 @@ const ReduxEntity = ({
         return fetchBar;
       case ENTITY_KEY.BAZ:
         return fetchBaz;
+      case ENTITY_KEY.TODO:
+        return fetchToDo;
     }
   };
   return (
@@ -47,12 +50,13 @@ ReduxEntity.propTypes = {
   entities: PropTypes.object.isRequired,
   fetchFoo: PropTypes.func.isRequired,
   fetchBar: PropTypes.func.isRequired,
-  fetchBaz: PropTypes.func.isRequired
+  fetchBaz: PropTypes.func.isRequired,
+  fetchToDo: PropTypes.func.isRequired
 };
 
 export default connect(
   (state) => ({
     entities: state.entities
   }),
-  { fetchFoo, fetchBar, fetchBaz }
+  { fetchFoo, fetchBar, fetchBaz, fetchToDo }
 )(ReduxEntity);
