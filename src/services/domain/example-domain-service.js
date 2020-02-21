@@ -16,6 +16,9 @@ const ExampleDomainService = {
   getFoo () {
     return DataAccessService.get('/foo');
   },
+  getToDoList () {
+    return DataAccessService.get('/to-do-list')
+  },
   getFakePromise (doReject) {
     return new Promise((resolve, reject) => {
       const delay = _getShortDelay();
