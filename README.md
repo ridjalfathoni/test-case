@@ -1,4 +1,4 @@
-# <a href='https://github.com/mikechabot/react-boilerplate'><img src='https://raw.githubusercontent.com/mikechabot/react-boilerplate/gh-pages/assets/img/header_photo.png' alt='logo' aria-label='https://github.com/mikechabot/react-boilerplate' /></a>
+# <a href='https://github.com/mikechabot/test-case'><img src='https://raw.githubusercontent.com/mikechabot/test-case/gh-pages/assets/img/header_photo.png' alt='logo' aria-label='https://github.com/mikechabot/test-case' /></a>
 
 A slightly opinionated yet dead simple boilerplate for ReactJS, Webpack 4, and React Router v4.
 
@@ -11,13 +11,13 @@ A slightly opinionated yet dead simple boilerplate for ReactJS, Webpack 4, and R
 :heart: Redux 
 
 <div align="center"> 
-  <a href="https://travis-ci.org/mikechabot/react-boilerplate">
-    <img src="https://travis-ci.org/mikechabot/react-boilerplate.svg?branch=master" alt="build status" />
+  <a href="https://travis-ci.org/mikechabot/test-case">
+    <img src="https://travis-ci.org/mikechabot/test-case.svg?branch=master" alt="build status" />
   </a>
-  <a href="https://david-dm.org/mikechabot/react-boilerplate">
-    <img src="https://david-dm.org/mikechabot/react-boilerplate.svg" alt="dependency status" />
+  <a href="https://david-dm.org/mikechabot/test-case">
+    <img src="https://david-dm.org/mikechabot/test-case.svg" alt="dependency status" />
   </a>
-  <a href="https://github.com/mikechabot/react-boilerplate/pulls">
+  <a href="https://github.com/mikechabot/test-case/pulls">
     <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square" alt="prs welcome" />
   </a>
 </div>
@@ -35,7 +35,7 @@ A slightly opinionated yet dead simple boilerplate for ReactJS, Webpack 4, and R
 
 ## <a id="live-demo">Live Demo</a>
 
- http://mikechabot.github.io/react-boilerplate
+ http://mikechabot.github.io/test-case
  
 ----
 
@@ -48,16 +48,16 @@ A slightly opinionated yet dead simple boilerplate for ReactJS, Webpack 4, and R
 
 #### State Management
 * [redux-entity](https://github.com/mikechabot/redux-entity) for domain entity management
-* [redux-thunk](https://github.com/gaearon/redux-thunk) for [asynchronous actions](https://github.com/mikechabot/react-boilerplate/blob/master/src/redux/actions/thunks.js#L6)
+* [redux-thunk](https://github.com/gaearon/redux-thunk) for [asynchronous actions](https://github.com/mikechabot/test-case/blob/master/src/redux/actions/thunks.js#L6)
 * [redux-logger](https://github.com/theaqua/redux-logger) for capturing actions
 
 #### Routing
-* [react-router v4](https://github.com/reactjs/react-router) for client-side [routing](https://github.com/mikechabot/react-boilerplate/blob/master/src/Root.jsx#L5)
+* [react-router v4](https://github.com/reactjs/react-router) for client-side [routing](https://github.com/mikechabot/test-case/blob/master/src/Root.jsx#L5)
 
 #### HTTP
-* [Customizable](https://github.com/mikechabot/react-boilerplate/blob/master/src/services/data/ajax-service.js#L8), [Promise-based](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise) HTTP support via [Axios](https://github.com/mzabriskie/axios)
-* Utilizes a [a generic data service](https://github.com/mikechabot/react-boilerplate/blob/master/src/services/data/data-access-service.js#L48) to easily fetch data
-* Example of [implementing the data service](https://github.com/mikechabot/react-boilerplate/blob/master/src/services/domain/example-domain-service.js#L17)
+* [Customizable](https://github.com/mikechabot/test-case/blob/master/src/services/data/ajax-service.js#L8), [Promise-based](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise) HTTP support via [Axios](https://github.com/mzabriskie/axios)
+* Utilizes a [a generic data service](https://github.com/mikechabot/test-case/blob/master/src/services/data/data-access-service.js#L48) to easily fetch data
+* Example of [implementing the data service](https://github.com/mikechabot/test-case/blob/master/src/services/domain/example-domain-service.js#L17)
 
 #### Styling
 * Supports [SCSS & SASS](http://sass-lang.com/) syntax
@@ -80,7 +80,7 @@ A slightly opinionated yet dead simple boilerplate for ReactJS, Webpack 4, and R
 
 ## <a id="getting-started">Getting Started</a>
 
-1. `$ git clone https://github.com/mikechabot/react-boilerplate.git`
+1. `$ git clone https://github.com/mikechabot/test-case.git`
 2. `$ npm install`
 3. Launch environment:
    *  **Production**: `$ npm start`
@@ -99,7 +99,7 @@ Use [`cross-env`](https://github.com/kentcdodds/cross-env) or a comparable libra
 
 `$ cross-env ENV_CONFIG_PATH=/path/to/config.json npm start`
 
-> **Note**: This path is made available to Webpack **only**, however the contents of the file are stamped on a global variable during the build process (`process.env.APP_CONFIG`, see [webpack.config.js](https://github.com/mikechabot/react-boilerplate/blob/master/webpack.config.js#L44)), which is then accessible via the [ConfigService](https://github.com/mikechabot/react-boilerplate/blob/master/src/services/common/config-service.js#L8).
+> **Note**: This path is made available to Webpack **only**, however the contents of the file are stamped on a global variable during the build process (`process.env.APP_CONFIG`, see [webpack.config.js](https://github.com/mikechabot/test-case/blob/master/webpack.config.js#L44)), which is then accessible via the [ConfigService](https://github.com/mikechabot/test-case/blob/master/src/services/common/config-service.js#L8).
 
 If your configuration is loaded successfully, you can expect to see the following indicator during startup:
 
@@ -111,16 +111,16 @@ If your configuration is loaded successfully, you can expect to see the followin
 
 Using configuration file @ `D\:\_workspaces\foo.json`
 
-    mikec@Krait MINGW64 /d/_workspaces/react-boilerplate (master)
+    mikec@Krait MINGW64 /d/_workspaces/test-case (master)
     $ cross-env ENV_CONFIG_PATH="D\:\_workspaces\foo.json" npm start
 
-    > react-boilerplate@2.5.0 start D:\_workspaces\react-boilerplate
+    > test-case@2.5.0 start D:\_workspaces\test-case
     > npm run prod
 
-    > react-boilerplate@2.5.0 prod D:\_workspaces\react-boilerplate
+    > test-case@2.5.0 prod D:\_workspaces\test-case
     > npm run build:prod && npm run start-server
 
-    > react-boilerplate@2.5.0 build:prod D:\_workspaces\react-boilerplate
+    > test-case@2.5.0 build:prod D:\_workspaces\test-case
     > cross-env NODE_ENV=production webpack --progress --colors
 
     ** Using custom configuration located at "D:\_workspaces\foo.json" **

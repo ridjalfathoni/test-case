@@ -10,8 +10,7 @@ export const INITIAL_STATE = {
     [ENTITY_KEY.FOO]: {},
     [ENTITY_KEY.BAR]: {},
     [ENTITY_KEY.BAZ]: {},
-    [ENTITY_KEY.TODO]: {}
-
   },
-  counter: 0
+  counter: 0,
+  [ENTITY_KEY.TODO]: {}
 };

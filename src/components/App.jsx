@@ -14,7 +14,7 @@ import Flex from './common/glamorous/Flex';
 const URL = {
   REDUX_ENTITY: 'https://github.com/mikechabot/redux-entity',
   REACT_ROUTER: 'https://github.com/ReactTraining/react-router',
-  BOILERPLATE: 'http://www.github.com/mikechabot/react-boilerplate'
+  BOILERPLATE: 'http://www.github.com/mikechabot/test-case'
 };
 
 const ColumnBody = ({ title, subtitle, icon, body }) => (
@@ -98,7 +98,7 @@ const App = ({ location, history }) => {
       <div>
         <NavBar
           url={URL.BOILERPLATE}
-          label="react-boilerplate"
+          label="test-case"
         />
       </div>
       <Body location={location} history={history}/>

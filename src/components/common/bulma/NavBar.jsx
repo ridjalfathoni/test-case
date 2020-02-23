@@ -4,7 +4,7 @@ import logo from '../../../assets/images/logo.png';
 import Icon from '../Icon';
 
 const URL = {
-  GH: 'http://www.github.com/mikechabot/react-boilerplate',
+  GH: 'http://www.github.com/mikechabot/test-case',
   NPM: 'https://www.npmjs.com/~mikechabot'
 };
 

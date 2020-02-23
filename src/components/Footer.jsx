@@ -11,32 +11,32 @@ const Footer = () => {
           <p>
             <strong className="has-text-grey-light">
               <Icon icon="cloud"/>
-              &nbsp;react-boilerplate
+              &nbsp;test-case
             </strong> by <a href="https://github.com/mikechabot" target="_blank" rel="noopener noreferrer">Mike
             Chabot</a>.
             <br/>
-            The <a href="https://github.com/mikechabot/react-boilerplate" target="_blank" rel="noopener noreferrer">source
+            The <a href="https://github.com/mikechabot/test-case" target="_blank" rel="noopener noreferrer">source
             code</a> is licensed under <a
-              href="https://github.com/mikechabot/react-boilerplate/blob/master/LICENSE">MIT</a>.
+              href="https://github.com/mikechabot/test-case/blob/master/LICENSE">MIT</a>.
           </p>
           <Flex hAlignCenter>
             <GithubButton
               label="Star"
               icon="octicon-star"
-              href="mikechabot/react-boilerplate"
-              ariaLabel="Star mikechabot/react-boilerplate on GitHub"
+              href="mikechabot/test-case"
+              ariaLabel="Star mikechabot/test-case on GitHub"
             />
             <GithubButton
               label="Fork"
               icon="octicon-repo-forked"
-              href="mikechabot/react-boilerplate/fork"
-              ariaLabel="Fork mikechabot/react-boilerplate on GitHub"
+              href="mikechabot/test-case/fork"
+              ariaLabel="Fork mikechabot/test-case on GitHub"
             />
             <GithubButton
               label="Watch"
               icon="octicon-eye"
-              href="mikechabot/react-boilerplate/subscription"
-              ariaLabel="Watch mikechabot/react-boilerplate on GitHub"
+              href="mikechabot/test-case/subscription"
+              ariaLabel="Watch mikechabot/test-case on GitHub"
             />
           </Flex>
         </div>
